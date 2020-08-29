@@ -44,10 +44,10 @@ const senseisSeed = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.c
 {name: "Ray Bruges", price: 20, imgURL: "https://images.csmonitor.com/csmarchives/2008/02/LBRUGES_P1.jpg?alias=standard_900x600nc"}]
 
 db.Buddy
-  .remove({})
-  .then(() => db.buddies.collection.insertMany(buddiesSeed))
+  .deleteMany({})
+  .then(() => db.Buddy.insertMany(buddiesSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data);
     process.exit(0);
   })
   .catch(err => {
@@ -56,10 +56,10 @@ db.Buddy
   });
 
   db.Teacher
-  .remove({})
-  .then(() => db.teachers.collection.insertMany(senseisSeed))
+  .deleteMany({})
+  .then(() => db.Teacher.insertMany(senseisSeed))
   .then(data => {
-    console.log(data.result.n + " records inserted!");
+    console.log(data);
     process.exit(0);
   })
   .catch(err => {
