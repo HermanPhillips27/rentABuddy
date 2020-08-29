@@ -11,7 +11,7 @@ mongoose.connect(
   }
 );
 
-const buddies = [{name: "Pete", price: 20.00, imgURL: "https://pbs.twimg.com/profile_images/1277041926487920645/cY4m60rL_400x400.jpg"}, 
+const buddiesSeed = [{name: "Pete", price: 20.00, imgURL: "https://pbs.twimg.com/profile_images/1277041926487920645/cY4m60rL_400x400.jpg"}, 
 {name: "TimtheTatman", price: 35.00, imgURL:"https://vignette.wikia.nocookie.net/youtube/images/f/f0/TimthetatmanFace.jpg/revision/latest/scale-to-width-down/350?cb=20190613064031"}, 
 {name: "Drlupo", price:25.00, imgURL: "https://techcrunch.com/wp-content/uploads/2019/01/GettyImages-1054462370.jpg"}, {name: "JohnnySins", price: 20.00, imgURL: "https://vignette.wikia.nocookie.net/berlin-united-2/images/a/a0/Namnl%C3%B6st-3.png/revision/latest?cb=20200106114012"}, 
 {name: "Eric Andre", price: 30.00, imgURL: "https://pyxis.nymag.com/v1/imgs/55f/b09/eeb9ce58c124f0f24896b75fb91867d3dc-08-eric-andre.rsquare.w700.jpg"}, 
@@ -23,7 +23,7 @@ const buddies = [{name: "Pete", price: 20.00, imgURL: "https://pbs.twimg.com/pro
 {name: "Lebron James", price: 100.00, imgURL: "https://cdn.vox-cdn.com/thumbor/n8g7ylNisjEX43zM4QcKtAwX-U8=/0x0:5568x3712/1200x800/filters:focal(2602x973:3492x1863)/cdn.vox-cdn.com/uploads/chorus_image/image/66085365/usa_today_13894911.0.jpg"}, {name: "Batman", price: 40.00, imgURL: "https://sm.ign.com/t/ign_za/feature/b/batman-ran/batman-ranking-the-movie-batsuits_zpfa.1200.jpg"}, 
 {name: "John Cena", price: 25.00, imgURL: "https://dzone.com/storage/temp/12876949-pic-field-in-fall.jpg"}]
 
-const senseis = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.com/2e8syk.jpg"}, 
+const senseisSeed = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.com/2e8syk.jpg"}, 
 {name: "Shroud", price: 40, imgURL: "https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/uncut_gems_0521881-e1577287301198.jpg"}, 
 {name: "Mrs. Lippy", price: 15, imgURL: "https://i.redd.it/3hnvqk71pma11.jpg"}, 
 {name: "Veronica Vaughn", price: 30, imgURL: "https://i.pinimg.com/originals/a5/21/24/a52124d6f1994dc54ab8d1957d429913.jpg"}, 
@@ -41,3 +41,16 @@ const senseis = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.com/2
 {name: "Regina George", price: 20, imgURL: "https://www.collegefashion.net/wp-content/uploads/2019/02/screen-shot-2019-01-01-at-114050-am.png"}, 
 {name: "Ron Burgandy", price: 45, imgURL: "https://www.rollingstone.com/wp-content/uploads/2018/06/shutterstock_1563197a-661fa87d-8b0c-4e77-a052-73071a1759c9.jpg?w=1024"}, 
 {name: "Ray Bruges", price: 20, imgURL: "https://images.csmonitor.com/csmarchives/2008/02/LBRUGES_P1.jpg?alias=standard_900x600nc"}]
+
+db.Book
+  .remove({})
+  .then(() => db.buddies.collection.insertMany(buddiesSeed))
+  .then(() => db.teachers.collection.insertMany(senseisSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
