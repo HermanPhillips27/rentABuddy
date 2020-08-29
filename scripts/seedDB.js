@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
+
 // This file empties the Books collection and inserts the books below
 
 mongoose.connect(
@@ -42,9 +43,20 @@ const senseisSeed = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.c
 {name: "Ron Burgandy", price: 45, imgURL: "https://www.rollingstone.com/wp-content/uploads/2018/06/shutterstock_1563197a-661fa87d-8b0c-4e77-a052-73071a1759c9.jpg?w=1024"}, 
 {name: "Ray Bruges", price: 20, imgURL: "https://images.csmonitor.com/csmarchives/2008/02/LBRUGES_P1.jpg?alias=standard_900x600nc"}]
 
-db.Book
+db.Buddy
   .remove({})
   .then(() => db.buddies.collection.insertMany(buddiesSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.Teacher
+  .remove({})
   .then(() => db.teachers.collection.insertMany(senseisSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
@@ -54,3 +66,4 @@ db.Book
     console.error(err);
     process.exit(1);
   });
+  
