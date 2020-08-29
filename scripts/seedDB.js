@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/buddies4rent", {
+  "mongodb://<dbuser>:<dbpassword>@ds033046.mlab.com:33046/heroku_d43pzrpl", {
     useCreateIndex: true,
     useNewUrlParser: true
   }
