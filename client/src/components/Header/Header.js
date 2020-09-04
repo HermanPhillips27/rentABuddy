@@ -27,12 +27,16 @@ const Header =()=> {
                     <a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
                     <a className="nav-link" href="#">Buddies</a>
                     <a className="nav-link" href="#">Senseis</a>
+                    
                 </div>
             </div>
             <form className="form-inline">
                 <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
                 <button className="btn btn-outline-primary my-2 my-sm-0" type="submit" onClick={()=> setSearchState(searchState)}>Search</button>
             </form>
+            <a className="nav-link" href="#">Cart</a>
+            <a className="navbar-brand" href="#"><img className= "logoImg" src= 'https://www.pngitem.com/pimgs/m/521-5216062_shopping-cart-transparent-background-shopping-cart-icon-png.png' alt='logo' /></a>
+            
         </nav>
     )
 }
