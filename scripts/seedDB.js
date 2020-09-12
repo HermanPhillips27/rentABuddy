@@ -20,7 +20,7 @@ const buddiesSeed = [{name: "Pete", price: 20.00, imgURL: "https://pbs.twimg.com
 {name: "Chazz", price: 15.00, imgURL: "https://lh4.googleusercontent.com/5_dx5vRX1hs_T3atBMsO1ktvCrmOLDZjZHw1d45DmqSqNAsGne-HAhoqlQw_aT0bhE7GiyTYCBX2uDg082l0_qkaTlyliQhbdPPPTMxoi_HJZNPmLD3fOqXlHxvTn5wLKw=s412"}, 
 {name: "Borat Sagdiyev", price: 12.00, imgURL: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/11/21/13/borat.jpg?w968h681"}, 
 {name: "White Goodman", price: 20.00, imgURL: "https://vignette.wikia.nocookie.net/villains/images/d/d9/Wgoodman.jpg/revision/latest/top-crop/width/360/height/450?cb=20110326004743"}, 
-{name: "Ricky Bobby", price: 35.00, imgURL: "https://vignette.wikia.nocookie.net/villains/images/d/d9/Wgoodman.jpg/revision/latest/top-crop/width/360/height/450?cb=20110326004743"}, 
+{name: "Ricky Bobby", price: 35.00, imgURL: "https://smartcollegevisit.com/wp-content/uploads/2020/04/talladega-nights-movie-will-ferrell-sony-pictures.jpg"}, 
 {name: "Lebron James", price: 100.00, imgURL: "https://cdn.vox-cdn.com/thumbor/n8g7ylNisjEX43zM4QcKtAwX-U8=/0x0:5568x3712/1200x800/filters:focal(2602x973:3492x1863)/cdn.vox-cdn.com/uploads/chorus_image/image/66085365/usa_today_13894911.0.jpg"}, {name: "Batman", price: 40.00, imgURL: "https://sm.ign.com/t/ign_za/feature/b/batman-ran/batman-ranking-the-movie-batsuits_zpfa.1200.jpg"}, 
 {name: "John Cena", price: 25.00, imgURL: "https://dzone.com/storage/temp/12876949-pic-field-in-fall.jpg"}]
 

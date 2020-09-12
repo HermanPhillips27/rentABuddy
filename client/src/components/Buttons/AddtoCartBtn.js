@@ -1,18 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from '../../utils/cartContext'
 
 
 const AddToCartBtn = (props) => {
+    const cartContext = useContext(CartContext)
     
-    const handleClick = () => {
-        
-        props.localCart.push(props.person)
-        console.log(props.localCart)
-        localStorage.clear();
-        let cartStringify = JSON.stringify(props.localCart)
-        localStorage.setItem("cart", cartStringify)
-    }
     return(
-        <button className = "btn btn-success" onClick= {handleClick}> Add to Cart</button>
+        <button className = "btn btn-success" onClick= {() => cartContext.handleClick(props.person)}> Add to Cart</button>
     )
 }
 

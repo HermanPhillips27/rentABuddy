@@ -37,8 +37,8 @@
   }
 } */
 
-.card {
-  width: 13%;
+body {
+  background-image: url(../src/images/playstationBackground.png);
 }
 
 .logoImg {
