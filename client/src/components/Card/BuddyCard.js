@@ -28,7 +28,7 @@ const BuddyCard = (props) => {
                 <p className="card-text">{person.price} $</p>
               </div>
               <Dropdown>
-                <Dropdown.Toggle variant="info" id="dropdown-basic">
+                <Dropdown.Toggle className= 'pb-3' variant="info" id="dropdown-basic">
                   Game
                 </Dropdown.Toggle>
 

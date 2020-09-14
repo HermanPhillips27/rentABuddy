@@ -6,9 +6,9 @@ const Jumbotron = () => {
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Welcome Gamers!</h1>
+          <h3>ON SALE!</h3>
           <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
+            This week Jesus Christ himself is on sale!
           </p>
         </div>
       </div>
