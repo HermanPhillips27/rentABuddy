@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from "react-router-dom"
+import cart from '../../images/cart.png'
 
 
 const Header =()=> {
@@ -33,10 +34,10 @@ const Header =()=> {
             </div>
             <form className="form-inline">
                 <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-primary my-2 my-sm-0" type="submit" onClick={()=> setSearchState(searchState)}>Search</button>
+                <button className="btn btn-outline-light my-2 my-sm-0" type="submit" onClick={()=> setSearchState(searchState)}>Search</button>
             </form>
             <Link className="nav-link text-white" to="/cart">Cart</Link>
-            <Link className="navbar-brand" to="/cart"><img className= "logoImg" src= 'https://www.pngitem.com/pimgs/m/521-5216062_shopping-cart-transparent-background-shopping-cart-icon-png.png' alt='logo' /></Link>
+            <Link className="navbar-brand" to="/cart"><img className= "logoImg" src= {cart} alt='logo' /></Link>
             
         </nav>
     )

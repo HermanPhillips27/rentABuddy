@@ -22,6 +22,8 @@ const SignUp = () => {
   console.log(buddySignUp)
   return (
     <div class="card signUp" style={{ width: "20rem" }}>
+      <div className= "card-header"> <h5 className= "card-title">Sign up to be a Buddy!</h5></div>
+      <div className= "card-body">
       <form onSubmit= {onSubmit}>
         <div class="form-group mx-sm-3 mb-2">
           <label for="exampleInputEmail1">Name</label>
@@ -47,15 +49,15 @@ const SignUp = () => {
           />
         </div>
         <div class="form-group mx-sm-3 mb-2">
-          <label for="exampleFormControlTextarea1">Image Url</label>
-          <textarea
+          <label for="ImageURL">Image Url</label>
+          <input
             name= "imgURL"
             onChange={handleChange}
             class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="3"
+            id="ImageURL"
+            type= "text"
             placeholder="poop.jpg"
-          ></textarea>
+          />
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
@@ -67,6 +69,7 @@ const SignUp = () => {
           Submit
         </button>
       </form>
+      </div>
     </div>
   );
 };

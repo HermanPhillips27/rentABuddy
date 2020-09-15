@@ -12,7 +12,8 @@ function App() {
   const initialCart = JSON.parse(localStorage.getItem("cart"))
     const [cart, setCart] = useState(initialCart || [])
     const handleClick = (person) => {
-    setCart([...cart, person]);  
+      if(!cart.includes(person))
+        setCart([...cart, person]);  
     }
     
     const removeItem =(name) => {
