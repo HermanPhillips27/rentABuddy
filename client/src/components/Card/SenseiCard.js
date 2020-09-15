@@ -29,9 +29,11 @@ const SenseiCard = () => {
               />
               <div className="card-body">
                 <h5 className="card-title">{person.name}</h5>
-                <p className="card-text">{person.price} $</p>
-                <Dropdown>
-                <Dropdown.Toggle className= "pb-3" variant="info" id="dropdown-basic">
+                <p className="card-text">${person.price}</p>
+                
+              </div>
+              <Dropdown>
+                <Dropdown.Toggle variant="info" id="dropdown-basic">
                   Game
                 </Dropdown.Toggle>
 
@@ -55,7 +57,6 @@ const SenseiCard = () => {
                 </Dropdown.Menu>
               </Dropdown>
                 <AddToCartBtn className= "pb-3" person={person} />
-              </div>
             </div>
           </div>
         ))}

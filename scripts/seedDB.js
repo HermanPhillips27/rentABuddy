@@ -23,7 +23,8 @@ const buddiesSeed = [{name: "Pete", price: 20.00, imgURL: "https://pbs.twimg.com
 {name: "Ricky Bobby", price: 35.00, imgURL: "https://smartcollegevisit.com/wp-content/uploads/2020/04/talladega-nights-movie-will-ferrell-sony-pictures.jpg"}, 
 {name: "Lebron James", price: 100.00, imgURL: "https://cdn.vox-cdn.com/thumbor/n8g7ylNisjEX43zM4QcKtAwX-U8=/0x0:5568x3712/1200x800/filters:focal(2602x973:3492x1863)/cdn.vox-cdn.com/uploads/chorus_image/image/66085365/usa_today_13894911.0.jpg"}, {name: "Batman", price: 40.00, imgURL: "https://sm.ign.com/t/ign_za/feature/b/batman-ran/batman-ranking-the-movie-batsuits_zpfa.1200.jpg"}, 
 {name: "John Cena", price: 25.00, imgURL: "https://dzone.com/storage/temp/12876949-pic-field-in-fall.jpg"},
-{name: "Jesus Christ", price: 27.00, imgURL: "https://miro.medium.com/max/700/1*bP7NpBpLRoLIQr70BJKKkw.jpeg"}]
+{name: "Jesus Christ", price: 27.00, imgURL: "https://miro.medium.com/max/700/1*bP7NpBpLRoLIQr70BJKKkw.jpeg"},
+{name: "John Smith", price: 45.00, imgURL: "https://i.kym-cdn.com/entries/icons/facebook/000/033/233/cover8.jpg"}]
 
 const senseisSeed = [{name: "Jim Dhima", price: 27, imgURL: "https://i.imgflip.com/2e8syk.jpg"}, 
 {name: "Shroud", price: 40, imgURL: "https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/uncut_gems_0521881-e1577287301198.jpg"}, 

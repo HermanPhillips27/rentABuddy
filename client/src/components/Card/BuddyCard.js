@@ -26,10 +26,10 @@ const BuddyCard = (props) => {
               />
               <div className="card-body">
                 <h5 className="card-title">{person.name}</h5>
-                <p className="card-text">{person.price} $</p>
+                <p className="card-text">${person.price} </p>
               </div>
               <Dropdown>
-                <Dropdown.Toggle className= 'pb-3' variant="info" id="dropdown-basic">
+                <Dropdown.Toggle variant="info" id="dropdown-basic">
                   Game
                 </Dropdown.Toggle>
 
@@ -52,7 +52,7 @@ const BuddyCard = (props) => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <AddToCartBtn className = 'pb-3' person={person} handleClick={props.handleClick} />
+              <AddToCartBtn className = 'pb-3' person={person}/>
               
             </div>
           </div>
