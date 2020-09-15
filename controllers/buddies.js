@@ -8,9 +8,9 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  findById: function(req, res) {
+  findByID: function(req, res) {
     db.Buddy
-      .findById(req.params.id)
+      .findByName(req.params.name)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

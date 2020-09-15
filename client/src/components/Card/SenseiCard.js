@@ -15,7 +15,8 @@ const SenseiCard = () => {
 
   // console.log(people)
   return (
-    <div className="container">
+    <div className="container cardPage">
+      <h1 className= "cardTitles text-white"> Senseis</h1>
       <div className="row">
         {people.map((person, i) => (
           <div className="col-3 pb-3">
@@ -30,7 +31,7 @@ const SenseiCard = () => {
                 <h5 className="card-title">{person.name}</h5>
                 <p className="card-text">{person.price} $</p>
                 <Dropdown>
-                <Dropdown.Toggle variant="info" id="dropdown-basic">
+                <Dropdown.Toggle className= "pb-3" variant="info" id="dropdown-basic">
                   Game
                 </Dropdown.Toggle>
 
@@ -53,7 +54,7 @@ const SenseiCard = () => {
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-                <AddToCartBtn person={person} />
+                <AddToCartBtn className= "pb-3" person={person} />
               </div>
             </div>
           </div>

@@ -12,7 +12,8 @@ const BuddyCard = (props) => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container cardPage">
+      <h1 className= "cardTitles text-white"> Buddies</h1>
       <div className="row">
         {people.map((person, i) => (
           <div className="col-3 pb-3">

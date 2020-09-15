@@ -45,3 +45,27 @@ body {
   height: 75px;
 
 }
+
+.signUp {
+  position: absolute;
+  top: 120px;
+  right: 110px;
+  
+}
+
+.saleCard {
+  width: 275px; 
+  height: 353px;
+  position: absolute;
+  top: 120px;
+  left: 100px;
+}
+
+.cardPage {
+  padding-top: 20px;
+}
+
+.cardTitles {
+  text-align: center;
+  font-size: 90px;
+}
